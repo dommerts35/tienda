@@ -196,3 +196,64 @@
     margin-right: -1rem;
   }
 }
+
+/* Estado activo (como en el Header) */
+.menu__item.active .menu__item-link {
+  color: #3498db;
+  font-weight: 800;
+}
+
+/* Mejorar la transición del marquee para Links */
+.menu__item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: 700;
+  color: #fff;
+  font-size: 5vh;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+/* Asegurar que el Link ocupe todo el espacio */
+.menu__item-link {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Los gradientes en hover se mantienen igual */
+.menu__item:nth-child(1) .marquee {
+  background: linear-gradient(45deg, #ff6b6b, #ee5a24, #ff9ff3);
+}
+
+.menu__item:nth-child(2) .marquee {
+  background: linear-gradient(45deg, #2ecc71, #27ae60, #1dd1a1);
+}
+
+.menu__item:nth-child(3) .marquee {
+  background: linear-gradient(45deg, #3498db, #2980b9, #54a0ff);
+}
+
+.menu__item:nth-child(4) .marquee {
+  background: linear-gradient(45deg, #9b59b6, #8e44ad, #a29bfe);
+}
+
+/* Efecto hover para el Link */
+.menu__item:hover .menu__item-link {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.menu__item:hover .marquee {
+  transform: translate3d(0, 0%, 0);
+}
