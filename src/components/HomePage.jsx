@@ -8,22 +8,22 @@ export function HomePage({ onAddToCart }) {
 
     const flowingMenuItems = [
     {
-        link: "#regalos",
+        path: "/regalos",
         text: "Regalos Exclusivos",
         image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=300&h=200&fit=crop"
     },
     {
-        link: "#ropa", 
+        path: "/ropa", 
         text: "Moda Premium",
         image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300&h=200&fit=crop"
     },
     {
-        link: "#servicios",
+        path: "/servicios",
         text: "Servicios Legales", 
         image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=300&h=200&fit=crop"
     },
     {
-        link: "#catalogo",
+        path: "/catalogo",
         text: "Catálogo Completo",
         image: "https://images.unsplash.com/photo-1607082350899-7e105aa886ae?w=300&h=200&fit=crop"
     }
